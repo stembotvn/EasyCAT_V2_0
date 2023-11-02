@@ -56,17 +56,18 @@
         <Type ProductCode="#xABE00001" RevisionNo="#x00000001" CheckRevisionNo="EQ_OR_G">TestEasyCAT_Custom</Type>
         <Name LcId="1033"><![CDATA[TestEasyCAT_Custom]]></Name>        
         <GroupType>SSC_Device</GroupType>
+
         <Fmmu>Outputs</Fmmu>
         <Fmmu>Inputs</Fmmu>
-       
-	    <!-- output base physical address -->       
+
+	    <!-- output base physical address -->
         <Sm StartAddress="#x1000" ControlByte="#x64" Enable="1">Outputs</Sm>
 
-		<!-- input base physical address -->             
+	    <!-- input base physical address -->
         <Sm StartAddress="#x1200" ControlByte="#x20" Enable="1">Inputs</Sm>
 
-<!-- ***************** output PDO ********************************************************** --> 
- 
+<!-- ***************** output PDO ********************************************************** -->
+
         <RxPdo Fixed="1" Mandatory="1" Sm="0">
           <Index>#x1600</Index>
           <Name>Outputs</Name>
@@ -77,10 +78,10 @@
             <Name>Leds</Name>
             <DataType>USINT</DataType>
           </Entry>
-        </RxPdo>          
-        
-<!-- ***************** input PDO *********************************************************** -->
- 
+        </RxPdo>
+
+<!-- ***************** input PDO ********************************************************** -->
+
         <TxPdo Fixed="1" Mandatory="1" Sm="1">
           <Index>#x1A00</Index>
           <Name>Inputs</Name>
@@ -120,6 +121,7 @@
             <DataType>USINT</DataType>
           </Entry>
         </TxPdo>
+
 
 <!-- ***************** Synchronization ***************************************************** -->
         
